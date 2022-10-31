@@ -1,8 +1,11 @@
 /* Basic Style */
-.body {
+.main {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 .pic {
@@ -105,6 +108,18 @@ input,
   color: #333;
 }
 
+.task-label {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  font-family: Lato, sans-serif;
+  color: #888;
+  width: 56%;
+  flex-grow: 1;
+}
+
 /* New Task */
 .new-task {
   display: block;
@@ -127,6 +142,14 @@ input,
 
 .item-wrapper {
   vertical-align: middle;
+}
+
+.item-wrapper.edit-mode .task-label {
+  display: none;
+}
+
+.item-wrapper .task {
+  display: none;
 }
 
 .checkbox {
@@ -160,17 +183,14 @@ input,
   color: #888;
 }
 
-/* Edit Task */
-ul li input[type=text] {
-  display: none;
+.completed-tasks-label.task {
+  border: none;
+  background: none;
 }
 
-.edit-mode input[type=text] {
+/* Edit Task */
+
+.edit-mode .task {
   display: inline-block;
   width: 224px;
-}
-
-.edit-mode
-.task {
-  display: none;
 }
