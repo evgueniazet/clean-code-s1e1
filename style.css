@@ -16,7 +16,8 @@
   width: 100%;
 }
 
-.pic .pic-link {
+.pic,
+.pic-link {
   font-family: fantasy, cursive;
 }
 
@@ -169,6 +170,7 @@ ul li input[type=text] {
   width: 224px;
 }
 
-.edit-mode .task {
+.edit-mode
+.task {
   display: none;
 }
