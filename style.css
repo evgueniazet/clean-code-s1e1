@@ -24,7 +24,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .pic {
     text-align: center;
